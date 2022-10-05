@@ -12,6 +12,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 .saluteTextContainer {
@@ -33,6 +34,13 @@
 .nameContainer {
   height: 100vh;
   background-color: rebeccapurple;
+}
+.nameContainer .name {
+  font-size: 20vw;
+  color: #333;
+  cursor: default;
+  text-align: center;
+  line-height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */
