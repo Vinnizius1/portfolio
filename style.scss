@@ -66,6 +66,39 @@
 .projects {
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 30vh;
   padding: 0 100px;
 }
+
+.projectsTitle {
+  font-size: 10vw;
+  color: #333;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.phone {
+  width: 300px;
+  height: 600px;
+  position: relative;
+
+  .phoneScreen {
+    width: 265px;
+    // height: 567px;
+    position: absolute;
+    top: 11px;
+    left: 17px;
+
+    .phoneApp {
+      width: inherit;
+      border-radius: 29px;
+    }
+  }
+}
+/* 24:50 */
