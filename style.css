@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: "Open Sans", sans-serif;
   padding: 0;
@@ -83,21 +84,49 @@
 }
 
 .phone {
+  flex: 1;
   width: 300px;
   height: 600px;
   position: relative;
 }
 .phone .phoneScreen {
-  width: 265px;
+  width: 267px;
   position: absolute;
-  top: 11px;
-  left: 17px;
+  top: 9px;
+  left: 16px;
+  border-radius: 39px;
+  overflow: hidden;
+  /* caso tenha um scroll na página e queira escondê-lo */
 }
 .phone .phoneScreen .phoneApp {
   width: inherit;
-  border-radius: 29px;
 }
 
-/* 24:50 */
+.projectDetail {
+  flex: 1;
+  gap: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.projectDetail .projectTitle {
+  font-size: 7vw;
+  color: #555;
+}
+.projectDetail .projectDesc {
+  color: #555;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 40px;
+}
+.projectDetail .projectButton {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #555;
+  color: #555;
+  cursor: pointer;
+}
+
+/* criaremos o efeito nesse botão! */
 
 /*# sourceMappingURL=style.css.map */
