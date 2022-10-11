@@ -1,3 +1,8 @@
+:root {
+  --primary5: #555;
+  --primary3: #333;
+}
+
 * {
   font-family: "Open Sans", sans-serif;
   padding: 0;
@@ -18,7 +23,7 @@
 .saluteTextContainer {
   flex: 3;
   .saluteText {
-    color: #333;
+    color: var(--primary3);
     font-size: 60vw;
     cursor: default;
   }
@@ -36,7 +41,7 @@
   background-color: rebeccapurple;
   .name {
     font-size: 20vw;
-    color: #333;
+    color: var(--primary3);
     cursor: default;
     text-align: center;
     line-height: 100vh;
@@ -47,7 +52,7 @@
   height: 100vh;
   .jobTitle {
     font-size: 10vw;
-    color: #333;
+    color: var(--primary3);
     line-height: 100vh;
     cursor: default;
   }
@@ -71,7 +76,7 @@
 
 .projectsTitle {
   font-size: 10vw;
-  color: #333;
+  color: var(--primary3);
 }
 
 .project {
@@ -117,24 +122,49 @@
 
   .projectTitle {
     font-size: 7vw;
-    color: #555;
+    color: var(--primary5);
   }
 
   .projectDesc {
-    color: #555;
+    color: var(--primary5);
     text-align: justify;
     font-size: 20px;
     line-height: 40px;
   }
 
+  /* antes do efeito abaixo era assim: */
+  // .projectButton {
+  //   padding: 10px 20px;
+  //   background-color: transparent;
+  //   border: 2px solid var(--primary5);
+  //   color: var(--primary5);
+  //   cursor: pointer;
+  // }
+
+  /* criaremos o efeito nesse botão! */
   .projectButton {
     padding: 10px 20px;
     background-color: transparent;
-    border: 2px solid #555;
-    color: #555;
+    border: 2px solid var(--primary5);
+    color: var(--primary5);
     cursor: pointer;
+
+    position: relative;
+    overflow: hidden;
+  }
+
+  .projectButton::after {
+    content: "Veja!";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: aqua;
+    transition: 1s all;
+  }
+
+  .projectButton:hover.projectButton::after {
+    transform: translateX(100%);
   }
 }
-
-/* criaremos o efeito nesse botão! */
-
