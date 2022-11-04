@@ -20,7 +20,7 @@
   flex: 3;
 }
 .salute .saluteTextContainer .saluteText {
-  color: --primary3;
+  color: #333;
   font-size: 60vw;
   cursor: default;
 }

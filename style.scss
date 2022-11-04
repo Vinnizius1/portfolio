@@ -19,16 +19,20 @@ $primary2: #222;
   display: flex;
   align-items: center;
   overflow: hidden;
+
   .saluteTextContainer {
     flex: 3;
+
     .saluteText {
-      color: (--primary3);
+      color: $primary3;
       font-size: 60vw;
       cursor: default;
     }
   }
+
   .saluteImgContainer {
     flex: 1;
+
     .saluteImg {
       width: 100%;
     }
@@ -39,6 +43,7 @@ $primary2: #222;
 .nameContainer {
   height: 100vh;
   background-color: rebeccapurple;
+
   .name {
     font-size: 20vw;
     color: $primary3;
@@ -51,6 +56,7 @@ $primary2: #222;
 /* Job */
 .jobTitleContainer {
   height: 100vh;
+
   .jobTitle {
     font-size: 10vw;
     color: $primary3;
@@ -148,30 +154,29 @@ $primary2: #222;
       border: 2px solid $primary5;
       color: $primary5;
       cursor: pointer;
-
       position: relative;
       overflow: hidden;
+
+      &::after {
+        content: "Veja!";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        transition: 1s all;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $primary5;
+        color: $primary2;
+      }
+
+      &:hover.projectButton::after {
+        transform: translateX(100%);
+      }
     }
 
-    .projectButton::after {
-      content: "Veja!";
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: -100%;
-      transition: 1s all;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: $primary5;
-      color: $primary2;
-    }
-
-    .projectButton:hover.projectButton::after {
-      transform: translateX(100%);
-    }
   }
 }
 
