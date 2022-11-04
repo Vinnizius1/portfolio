@@ -1,9 +1,4 @@
 @charset "UTF-8";
-:root {
-  --primary5: #555;
-  --primary3: #333;
-}
-
 * {
   font-family: "Open Sans", sans-serif;
   padding: 0;
@@ -14,51 +9,53 @@
   background-color: #111;
 }
 
+/* Salute */
 .salute {
   height: 100vh;
   display: flex;
   align-items: center;
   overflow: hidden;
 }
-
-.saluteTextContainer {
+.salute .saluteTextContainer {
   flex: 3;
 }
-.saluteTextContainer .saluteText {
-  color: var(--primary3);
+.salute .saluteTextContainer .saluteText {
+  color: --primary3;
   font-size: 60vw;
   cursor: default;
 }
-
-.saluteImgContainer {
+.salute .saluteImgContainer {
   flex: 1;
 }
-.saluteImgContainer .saluteImg {
+.salute .saluteImgContainer .saluteImg {
   width: 100%;
 }
 
+/* Name */
 .nameContainer {
   height: 100vh;
   background-color: rebeccapurple;
 }
 .nameContainer .name {
   font-size: 20vw;
-  color: var(--primary3);
+  color: #333;
   cursor: default;
   text-align: center;
   line-height: 100vh;
 }
 
+/* Job */
 .jobTitleContainer {
   height: 100vh;
 }
 .jobTitleContainer .jobTitle {
   font-size: 10vw;
-  color: var(--primary3);
+  color: #333;
   line-height: 100vh;
   cursor: default;
 }
 
+/* Classes específicias para cores */
 .dark {
   background: url("./img/bg1.png");
 }
@@ -74,27 +71,24 @@
   gap: 30vh;
   padding: 0 100px;
 }
-
-.projectsTitle {
+.projects .projectsTitle {
   font-size: 10vw;
-  color: var(--primary3);
+  color: #333;
 }
-
-.project {
+.projects .project {
   display: flex;
   align-items: center;
   gap: 100px;
   height: 100vh;
   overflow: hidden;
 }
-
-.phone {
+.projects .phone {
   flex: 1;
   width: 300px;
   height: 600px;
   position: relative;
 }
-.phone .phoneScreen {
+.projects .phone .phoneScreen {
   width: 267px;
   position: absolute;
   top: 9px;
@@ -103,50 +97,53 @@
   overflow: hidden;
   /* caso tenha um scroll na página e queira escondê-lo */
 }
-.phone .phoneScreen .phoneApp {
+.projects .phone .phoneScreen .phoneApp {
   width: inherit;
 }
-
-.projectDetail {
+.projects .projectDetail {
   flex: 1;
   gap: 50px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  /* antes do efeito abaixo era assim: */
+  /* antes do "efeito hover" logo abaixo, era assim: */
   /* criaremos o efeito nesse botão! */
 }
-.projectDetail .projectTitle {
+.projects .projectDetail .projectTitle {
   font-size: 7vw;
-  color: var(--primary5);
+  color: #555;
 }
-.projectDetail .projectDesc {
-  color: var(--primary5);
+.projects .projectDetail .projectDesc {
+  color: #555;
   text-align: justify;
   font-size: 20px;
   line-height: 40px;
 }
-.projectDetail .projectButton {
+.projects .projectDetail .projectButton {
   padding: 10px 20px;
   background-color: transparent;
-  border: 2px solid var(--primary5);
-  color: var(--primary5);
+  border: 2px solid #555;
+  color: #555;
   cursor: pointer;
   position: relative;
   overflow: hidden;
 }
-.projectDetail .projectButton::after {
+.projects .projectDetail .projectButton::after {
   content: "Veja!";
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: -100%;
-  background-color: aqua;
   transition: 1s all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #555;
+  color: #222;
 }
-.projectDetail .projectButton:hover.projectButton::after {
+.projects .projectDetail .projectButton:hover.projectButton::after {
   transform: translateX(100%);
 }
 
-/*# sourceMappingURL=style.css.map */
+/* 33:00 *//*# sourceMappingURL=style.css.map */
