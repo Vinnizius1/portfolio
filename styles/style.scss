@@ -1,0 +1,38 @@
+$primary5: #555;
+$primary3: #333;
+$primary2: #222;
+
+
+* {
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  background-color: #111;
+}
+
+/* Salute */
+@import "./salute";
+
+/* Name */
+@import "./name";
+
+/* Job */
+@import "./job";
+
+/* Container principal dos projetos */
+@import "./projects";
+
+/* Classes específicias para cores */
+.dark {
+  background: url("./img/bg1.png");
+}
+
+.purple {
+  background: rebeccapurple url("./img/bg2.png");
+}
+
+
+/* 33:00 */

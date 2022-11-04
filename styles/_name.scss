@@ -1,0 +1,12 @@
+.nameContainer {
+    height: 100vh;
+    background-color: rebeccapurple;
+
+    .name {
+        font-size: 15vw;
+        color: $primary3;
+        cursor: default;
+        text-align: center;
+        line-height: 100vh;
+    }
+}

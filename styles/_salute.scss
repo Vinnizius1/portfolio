@@ -1,0 +1,24 @@
+.salute {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    .saluteTextContainer {
+        flex: 3;
+
+        .saluteText {
+            color: $primary3;
+            font-size: 60vw;
+            cursor: default;
+        }
+    }
+
+    .saluteImgContainer {
+        flex: 1;
+
+        .saluteImg {
+            width: 100%;
+        }
+    }
+}

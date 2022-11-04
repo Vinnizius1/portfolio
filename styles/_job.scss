@@ -1,0 +1,10 @@
+.jobTitleContainer {
+    height: 100vh;
+
+    .jobTitle {
+        font-size: 10vw;
+        color: $primary3;
+        line-height: 100vh;
+        cursor: default;
+    }
+}
