@@ -9,7 +9,16 @@
   background-color: #111;
 }
 
-/* Salute */
+/* Classes específicias para cores */
+.dark {
+  background: url("./img/bg1.png");
+}
+
+.purple {
+  background: rebeccapurple url("./img/bg2.png");
+}
+
+/* Imports */
 .salute {
   height: 100vh;
   display: flex;
@@ -31,7 +40,6 @@
   width: 100%;
 }
 
-/* Name */
 .nameContainer {
   height: 100vh;
   background-color: rebeccapurple;
@@ -44,7 +52,6 @@
   line-height: 100vh;
 }
 
-/* Job */
 .jobTitleContainer {
   height: 100vh;
 }
@@ -55,7 +62,6 @@
   cursor: default;
 }
 
-/* Container principal dos projetos */
 .projects {
   display: flex;
   flex-direction: column;
@@ -135,15 +141,6 @@
 }
 .projects .projectDetail .projectButton:hover.projectButton::after {
   transform: translateX(100%);
-}
-
-/* Classes específicias para cores */
-.dark {
-  background: url("./img/bg1.png");
-}
-
-.purple {
-  background: rebeccapurple url("./img/bg2.png");
 }
 
 /* 33:00 *//*# sourceMappingURL=style.css.map */

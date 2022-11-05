@@ -13,18 +13,6 @@ $primary2: #222;
   background-color: #111;
 }
 
-/* Salute */
-@import "./salute";
-
-/* Name */
-@import "./name";
-
-/* Job */
-@import "./job";
-
-/* Container principal dos projetos */
-@import "./projects";
-
 /* Classes específicias para cores */
 .dark {
   background: url("./img/bg1.png");
@@ -34,5 +22,10 @@ $primary2: #222;
   background: rebeccapurple url("./img/bg2.png");
 }
 
+/* Imports */
+@import "./salute";
+@import "./name";
+@import "./job";
+@import "./projects";
 
 /* 33:00 */

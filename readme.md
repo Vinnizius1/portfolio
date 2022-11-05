@@ -7,3 +7,6 @@
 
 3. Link dele funcionando no Netlify:
     https://portfolio-vini.netlify.app/
+
+4. Aula top do prof. Dimitri sobre "Sass":
+    https://www.youtube.com/watch?v=1F2jqH-d7bw&t=24s
